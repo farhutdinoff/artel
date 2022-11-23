@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Артель - старая грамота</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.png">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link href="css/slick.css" rel="stylesheet">
+        <link href="css/remodal.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/media.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <div class="container">
+                <div class="header">
+                    <div id="menuToggle">
+                        <input type="checkbox">
+                        <span id="span1"></span>
+                        <span id="span2"></span>
+                        <span id="span3"></span>
+                    </div>
+                    <a href="#" class="logo">
+                        <img src="img/main-logo.svg" alt="Артель - старая грамота">
+                        <div>
+                            <div class="logo__title">
+                                АРТЕЛЬ
+                            </div>
+                            <div class="logo__name">
+                                СТАРАЯ ГРАМОТА
+                            </div>
+                        </div>
+                    </a>
+                    <div class="d-md-flex align-items-center mobi-nav">
+                        <nav>
+                            <ul class="main-menu">
+                                <li><a href="category.html">Коллекция</a></li>
+                                <li><a href="#" class="active-link">Производство</a></li>
+                                <li><a href="#">Персонализация</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="search">
+                            <span class="search-icon"></span>
+                            <form class="search-form header__search">
+                                <input type="text" name="search" class="search-form__input" placeholder="Поиск...">
+                                <button type="submit" class="search-form__btn"></button>
+                            </form>
+                            <span class="search-arrow"></span>
+                        </div>
+                    </div>
+    
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="icon-user mr-20">
+                            <img src="img/icon-user.png" alt="">
+                        </a>
+                        <a href="cart.html" class="cart">
+                            <span class="cart__title d-mobi-none">корзина <span class="cart__count">(0)</span></span>
+                            <img class="d-desk-none" src="img/icon-cart.svg" alt="">
+                            <span class="cart__count d-desk-none">0</span>
+                        </a>
+    
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--header-->
+        <!--checkout-->
+        <div class="cart-content">
+            <div class="container">
+                <div class="cart-grid">
+                    <h1 class="page-title page-title--color">Оформление заказа</h1>
+                    <table class="checkout-table">
+                       <tr>
+                           <td>Описание</td>
+                           <td>Количество</td>
+                           <td>Стоимость</td>
+                       </tr>
+                       <tr>
+                           <td><span class="table-product__title">Главная книга для ведения записей личного характера и толка.</span></td>
+                           <td><div class="table-product__count">
+                                    <input type="text" name="count" value="1">
+                                </div></td>
+                                <td class="table-product__price">
+                                    <span>7000 рублей</span>
+                                </td>
+                       </tr>
+                       <tr>
+                           <td><span class="table-product__title">Главная книга для ведения записей личного характера и толка.</span></td>
+                           <td><div class="table-product__count">
+                                    <input type="text" name="count" value="1">
+                                </div></td>
+                                <td class="table-product__price">
+                                    <span>7000 рублей</span>
+                                </td>
+                       </tr>
+                       <tr>
+                           <td><span class="table-product__title">Главная книга для ведения записей личного характера и толка.</span></td>
+                           <td><div class="table-product__count">
+                                    <input type="text" name="count" value="1">
+                                </div></td>
+                                <td class="table-product__price">
+                                    <span>7000 рублей</span>
+                                </td>
+                       </tr>
+                       <tr>
+                           <td><span class="table-product__title">Главная книга для ведения записей личного характера и толка.</span></td>
+                           <td><div class="table-product__count">
+                                    <input type="text" name="count" value="1">
+                                </div></td>
+                                <td class="table-product__price">
+                                    <span>7000 рублей</span>
+                                </td>
+                       </tr>
+                    </table>
+                    <span class="cart-grid__total checkout-total">Сумма покупок: 21000 <span class="currency">&#8381;</span></span>
+                    <div class="checkout-form-container">
+                        <span>Данные покупателя</span>
+                        <form class="checkout-form">
+                            <div class="checkout-form-left">
+                                <input type="text" placeholder="Ваше имя" name="name">
+                                <input type="tel" placeholder="Ваш телефон" name="tel">
+                                <input type="email" placeholder="Ваш e-mail" name="email">
+                                <input type="text" placeholder="Адрес доставки" name="address">
+                            </div>
+                            <div class="checkout-form-right">
+                                <textarea placeholder="Примечание к заказу"></textarea>
+                            </div>
+                            <div class="checkout-submit">
+                                <div class="checkout-attachment">
+                                    <input type="file" name="file">
+                                    <div class="checkout-attachment__container">
+                                        <span></span>
+                                        <button type="button">Прикрепить файл</button>
+                                    </div>
+                                </div>
+                                <button data-remodal-target="order-send" type="submit" class="checkout-form__submit">отправить лист заказа</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+                </div>
+        <!--checkout-->
+        <!--footer-->
+        <footer>
+            <div class="container">
+                <div class="d-md-flex justify-content-between align-items-top">
+                    <div class="footer-menu">
+                        <div class="footer-menu__title">
+                            коллекции
+                        </div>
+                        <a href="#">
+                            Советская эпоха
+                        </a>
+                        <a href="#">
+                            Царская Россия
+                        </a>
+                    </div>
+                    <div class="footer-menu">
+                        <div class="footer-menu__title">
+                            производство
+                        </div>
+                        <a href="#">
+                            Производство
+                        </a>
+                        <a href="#">
+                            Персонализация
+                        </a>
+                        <a href="#">
+                            Доставка
+                        </a>
+                    </div>
+                    <div class="footer-menu">
+                        <a href="#" class="footer-logo"></a>
+                    </div>
+                    <div class="footer-menu">
+                        <div class="footer-menu__title">
+                            о компании
+                        </div>
+                        <a href="#">
+                            История
+                        </a>
+                        <a href="#">
+                            Контакты
+                        </a>
+                        <a href="#">
+                            Гарантия
+                        </a>
+                    </div>
+                    <div class="footer-menu__contacts">
+                        <div class="footer-menu__title">
+                            контакты
+                        </div>
+                        <a href="tel:+74956403995">
+                            +7 495 640 39 95
+                        </a>
+                        <a href="tel:+79255961320">
+                            +7 925 596 13 20
+                        </a>
+                        <a href="mailto:order@staraya-gramota.ru">
+                            order@staraya-gramota.ru
+                        </a>
+                        <p>
+                            107076, Москва, <br> Стромынка 18, к.5
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container">
+                <div class="copyright">
+                    <span><a href="#"><img src="img/icon-vk.svg" alt=""></a> <a href="#"><img src="img/icon-tg.svg" alt=""></a></span>
+                </div>
+            </div>
+        </footer>
+        <!--footer-->
+         <!--remodal-->
+        <div class="remodal" data-remodal-id="order-send">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <span class="modal-title">Лист заказа отправлен!</span>
+  <span class="modal-note">В самое ближайшее время мы свяжемся с Вами для уточнения деталей!</span>
+  <div class="modal-btn">
+      <a href="/" class="modal-btn__item">на главную</a>
+  </div>
+</div>
+        <!--remodal-->
+    </body>
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/remodal.js"></script>
+    <script defer src="js/slick.min.js"></script>
+    <script defer src="js/default.js"></script>
+</html>
